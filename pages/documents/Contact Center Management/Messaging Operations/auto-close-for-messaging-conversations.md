@@ -60,3 +60,4 @@ This higher level of flexibility to determine when a conversation should close a
 4. **Joining as “reader” resets the auto close timer:** The auto close timer is reset when an agent manager opens a conversation to view it in full screen or from the Open Connections list.
    * This is currently a technical limitation since the auto close timer is reset with every metadata change of the conversation. An agent manager joining as a “reader” triggers a change in the conversation participant’s metadata.
    * There is a potential workaround: The timer is not reset when opening the transcript widget view from the "All Connections" list.
+5. **Last action is not a transfer to skill**: auto close will not take effect if the last action was a transfer to skill.
